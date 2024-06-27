@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "chat-with-documents-llm"
+version = "0.1.0"
+description = ""
+authors = ["Fabio Simoes <fabio.simoes@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.36.0"
+langchain = "^0.2.6"
+text-processing = "^0.0.2"
+python-docx = "^1.1.2"
+google-generativeai = "^0.7.1"
+langchain-community = "^0.2.6"
+langchain-openai = "^0.1.10"
+nltk = "^3.8.1"
+python-dotenv = "^1.0.1"
+docx2txt = "^0.8"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
