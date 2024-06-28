@@ -1586,6 +1586,17 @@ rtd = ["jupyter_sphinx", "mdit-py-plugins", "myst-parser", "pyyaml", "sphinx", "
 testing = ["coverage", "pytest", "pytest-cov", "pytest-regressions"]
 
 [[package]]
+name = "markdowntodocx"
+version = "0.1.5.1"
+description = "Convert markdown inside Docx to docx styles"
+optional = false
+python-versions = "*"
+files = [
+    {file = "markdowntodocx-0.1.5.1-py3-none-any.whl", hash = "sha256:5d22a9bbc4415c81f4eb25515aacabf7d8dc2ea37c21bc47f0084ee7a5f22826"},
+    {file = "markdowntodocx-0.1.5.1.tar.gz", hash = "sha256:84edb96395f9128c7de4bf478d05766f1a99677f5001f2c47ee5e5a626c7b9ba"},
+]
+
+[[package]]
 name = "markupsafe"
 version = "2.1.5"
 description = "Safely add untrusted strings to HTML/XML markup."
@@ -3582,4 +3593,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "479d35644da42edbc4932d16747f1687b30083022e610f01f9a6084d94ddb761"
+content-hash = "ceb5e8dff0d5f13a8221298509ad6b16c66d03b4c1b1157d97656e7f22fab71a"

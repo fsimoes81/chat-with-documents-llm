@@ -17,6 +17,7 @@ langchain-openai = "^0.1.10"
 nltk = "^3.8.1"
 python-dotenv = "^1.0.1"
 docx2txt = "^0.8"
+markdowntodocx = "^0.1.5.1"
 
 
 [tool.poetry.group.dev.dependencies]
