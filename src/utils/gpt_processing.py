@@ -3,6 +3,8 @@ from langchain_core.prompts import ChatPromptTemplate
 import google.generativeai as genai # Google's LLM
 from utils.text_processing import generate_data_store
 from docx import Document
+from markdowntodocx.markdownconverter import markdownToWordFromString
+
 
 def collect_text_context(DATA_PATH: str):
     chuncks = generate_data_store(DATA_PATH,'')
@@ -54,6 +56,7 @@ def chat_googleai(prompt: str):
 
 def save_to_docx(llm_response:str, doc_name: str):
     document = Document()
-    document.add_heading("Documento Escopo")
     document.add_paragraph(llm_response)
     document.save('../../data/generated_docs/'+doc_name)
+    res , msg = markdownToWordFromString(llm_response, '../../data/generated_docs/formated/'+doc_name)
+    print(res, msg)

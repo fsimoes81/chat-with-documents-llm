@@ -47,7 +47,7 @@ def gera_scope(model: str):
    
     escopo_file_name = f'teste_doc_escopo_{model}.docx'
     resposta = get_llm_response(PROMPT_TEMPLATE, file_path, escopo_file_name, model=model)
-    arquivo_escopo = os.path.join('../../data/generated_docs', escopo_file_name)
+    arquivo_escopo = os.path.join('../../data/generated_docs/formated', escopo_file_name)
 
     return arquivo_escopo, resposta
 
